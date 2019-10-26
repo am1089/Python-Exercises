@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 # Code to organize words
 
 # Get the input
@@ -9,7 +10,7 @@ WordString = words.split(',')
 # Sort the words
 WordString.sort()
 
-# Print the sorted words
-print(WordString)
+# Print the list into a string then join them with a string separator
+print(','.join(WordString))
 
 
