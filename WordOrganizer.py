@@ -5,10 +5,10 @@
 words = input("Input some words:")
 
 # Split the input into comma separated words to a list which can be sorted
-WordString = words.split(',')
+WordsList = words.split(',')
 
 # Sort the words
-WordString.sort()
+WordsList.sort()
 
 # join() turns the list back into a comma separated string
-print(','.join(WordString))
+print(','.join(WordsList))
