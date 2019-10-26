@@ -1,16 +1,14 @@
 #!/usr/bin/python3
-# The code alphabetizes the inputed word string then outputs it 
+# Alphabetically sorts the comma separated input word string and prints it
 
 # Get the input
 words = input("Input some words:")
 
-# Split the input into strings
+# Split the input into comma separated words to a list which can be sorted
 WordString = words.split(',')
 
 # Sort the words
 WordString.sort()
 
-# The method join() turns the list back into a string that's seperated by ,'s and is then printed
+# join() turns the list back into a comma separated string
 print(','.join(WordString))
-
-
