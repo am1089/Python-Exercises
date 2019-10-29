@@ -1,5 +1,5 @@
 # Code to sort multiple lists
-# input fields sperated by commas
+# input fields seperated by commas
 allip = []
 iplist = []
 
@@ -16,7 +16,7 @@ while True:
 
 
 # lambda is creating a tuple which is given as a key then sorted.
-# To sort it in decending order make the x's negative Ex: x[0] -> -x[0]
+# To sort it in descending order make the x's negative Ex: x[1] -> -x[1]
 allip.sort(key=lambda x: (x[0], x[1], x[2]))
 
 
