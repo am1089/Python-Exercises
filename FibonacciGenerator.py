@@ -15,4 +15,8 @@ if number <= 0:
     print('Please input a positive number')
 else:
     print('Fibonacci Sequence:')
-    print(list(fibonacci(number)))
+    #print(list(fibonacci(number)))
+    for i in range(1):
+        print(*(list(fibonacci(number))), sep = "\n")
+
+
