@@ -1,8 +1,8 @@
-# Determines what numbers are divisable by seven
+# Determines what numbers are divisible by seven
 
-def GetSeven(n):
+def DivBySeven(n):
     for i in range(0, number+1):
-        # % sees if the remainder is 0
+        # Remainder 0 means divisible by 7
         if i%7 == 0:   
             yield i
         else:
@@ -11,7 +11,7 @@ def GetSeven(n):
 print("Input a number:")
 number = int(input())
         
-for w in GetSeven(number):
+for w in DivBySeven(number):
     print(w)
         
     
