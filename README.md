@@ -8,3 +8,4 @@ These are a set of python exercises
 - **DivisibleBy7.py** takes the inputed number, n, then outputs all the numbers from 0 to n that are divisible by 7
 - **TupleOrganizer.py** takes in an input tuple then outputs a tuple of only even numbers
 - **OddNumberList.py** takes an input list then outputs a list of odd numbers
+- **WordReverser.py** takes a string then reverses it 
