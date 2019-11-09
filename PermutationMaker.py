@@ -1,8 +1,27 @@
-# Code to print all possible permutations of [1,2,3]
+# Create a permutation of a list of elements
 
-from itertools import permutations
+def permutations(l):
+    stack = []
+    if len(l) == 0 or len(l) == 1:
+        stack.append(l)
+        return stack
+    listlen = len(l)
+    for i in range(listlen):
+        # list(l) makes a copy of the original list
+        s = list(l)
+        x = s.pop(i)
+        n = permutations(s)
+        m = [x]
+        while len(n) > 0 :
+            s = n.pop(0)
+            stack.append(m+s)
+    return stack
 
-permutations = permutations([1,2,3,4])
+plist = [1,2,3]
+lp = permutations(plist)
+lperm = len(lp)
+for _ in range(lperm):
+    x = lp.pop(0)
+    print(x)
 
-for i in permutations:
-        print (i)
+
