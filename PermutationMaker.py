@@ -23,5 +23,3 @@ lperm = len(lp)
 for _ in range(lperm):
     x = lp.pop(0)
     print(x)
-
-
