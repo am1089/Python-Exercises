@@ -5,13 +5,13 @@ def permutations(l):
         yield l
         return
     listlen = len(l)
+    # Create a sublist by popping one element at a time
     for i in range(listlen):
         # list(l) makes a copy of the original list
-        s = list(l)
-        x = s.pop(i)
-        n = permutations(s)
+        sublist = list(l)
+        x = sublist.pop(i)
         m = [x]
-        for s in n:
+        for s in permutations(sublist):
             yield m+s
     return
 

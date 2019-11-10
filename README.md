@@ -9,4 +9,4 @@ These are a set of python exercises
 - **TupleOrganizer.py** takes in an input tuple then outputs a tuple of only even numbers
 - **OddNumberList.py** takes an input list then outputs a list of odd numbers
 - **WordReverser.py** takes a string then reverses it 
-- **PermutationMaker.py** outputs all permutations of [1,2,3]
+- **PermutationMaker.py** outputs all permutations of any list
