@@ -10,3 +10,4 @@ These are a set of python exercises
 - **OddNumberList.py** takes an input list then outputs a list of odd numbers
 - **WordReverser.py** takes a string then reverses it 
 - **PermutationMaker.py** outputs all permutations of any list
+- **Permutation.py** is another way of finding permutations of a list
