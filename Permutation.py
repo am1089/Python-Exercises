@@ -2,8 +2,8 @@
 
 def permutations(str, prefix):
     lenstr = len(str)
-    if lenstr == 0:
-        print(prefix)
+    if lenstr == 1:
+        print(prefix + str)
     else:
         for i in range(1,lenstr+1):
             rem = str[0:i-1] + str[i:]
@@ -14,5 +14,3 @@ def permutations(str, prefix):
 
 plist=[1,2,3]
 permutations(plist, [])
-
-
