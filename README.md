@@ -11,3 +11,4 @@ These are a set of python exercises
 - **WordReverser.py** takes a string then reverses it 
 - **PermutationMaker.py** outputs all permutations of any list
 - **Permutation.py** is another way of finding permutations of a list
+- **MergeSort.py** is a code to organize a list with a mergesort function
