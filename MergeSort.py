@@ -30,8 +30,10 @@ def merge(left, right):
         sortedList += left[i:]
         return sortedList
 
+# Made the list making and mergesort into a
+# new fuction because otherwise the fuctions wouldn't run with timeit
 def runit():
-        aList = random.sample(range(100000), 1000)
+        aList = random.sample(range(100000), 100000)
         mergesort(aList)
         #print(aList, "-> ", end='')
         #print(mergesort(aList))
