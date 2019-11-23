@@ -1,4 +1,4 @@
-# merge sort code
+# mergesort
 
 def mergesort(list):
         if len(list) == 0 or len(list) == 1:
@@ -21,6 +21,8 @@ def merge(left, right):
                 else:
                         sortedList.append(right[j])
                         j += 1
+        # One of the two list are empty so it doesn't matter
+        # what order they are added to sortedList
         sortedList += right[j:]
         sortedList += left[i:]
         return sortedList
