@@ -1,4 +1,5 @@
-# mergesort
+# mergesort with large random list and run time report
+import timeit, random
 
 def mergesort(list):
         if len(list) == 0 or len(list) == 1:
@@ -29,6 +30,9 @@ def merge(left, right):
         sortedList += left[i:]
         return sortedList
 
-aList = [0,7,3,2,1,4]
-print(aList, "-> ", end='')
-print(mergesort(aList))
+def runit():
+        aList = random.sample(range(100000), 1000)
+        mergesort(aList)
+        #print(aList, "-> ", end='')
+        #print(mergesort(aList))
+print(timeit.timeit('runit()','from __main__ import runit',number=1))
