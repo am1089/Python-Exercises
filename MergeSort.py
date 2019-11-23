@@ -12,16 +12,18 @@ def mergesort(list):
 
 def merge(left, right):
         sortedList = []
+        l = len(left)
+        r = len(right)
         i = 0
         j = 0
-        while i < len(left) and j < len(right):
+        while i < l and j < r:
                 if left[i] < right[j]:
                         sortedList.append(left[i])
                         i += 1
                 else:
                         sortedList.append(right[j])
                         j += 1
-        # One of the two list are empty so it doesn't matter
+        # One of the two lists are empty so it doesn't matter
         # what order they are added to sortedList
         sortedList += right[j:]
         sortedList += left[i:]
@@ -30,4 +32,3 @@ def merge(left, right):
 aList = [0,7,3,2,1,4]
 print(aList, "-> ", end='')
 print(mergesort(aList))
-
