@@ -12,3 +12,4 @@ These are a set of python exercises
 - **PermutationMaker.py** outputs all permutations of any list
 - **Permutation.py** is another way of finding permutations of a list
 - **MergeSort.py** is a code to organize a list with a mergesort function
+- **QuickSort.py** is a code to organize a list with a quicksort function
