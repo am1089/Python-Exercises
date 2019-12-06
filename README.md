@@ -13,3 +13,4 @@ These are a set of python exercises
 - **Permutation.py** is another way of finding permutations of a list
 - **MergeSort.py** is a code to organize a list with a mergesort function
 - **QuickSort.py** is a code to organize a list with a quicksort function
+- **LinearSearch** is a way to search for a inputed number in a random list

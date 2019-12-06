@@ -33,8 +33,9 @@ def merge(left, right):
 # Made the list making and mergesort into a
 # new fuction because otherwise the fuctions wouldn't run with timeit
 def runit():
+        # aList = [17,41,5,22,54,6,29,3,13]
         aList = random.sample(range(100000), 100000)
+        # print(aList, "-> ", end='')
         mergesort(aList)
-        #print(aList, "-> ", end='')
-        #print(mergesort(aList))
+        # print(aList)
 print(timeit.timeit('runit()','from __main__ import runit',number=1))
