@@ -14,10 +14,11 @@ class LinkedList:
         def printList(self):
                 temp = self.head
                 while (temp):
-                        print(temp.data)
+                        print(temp.data, '->', end = "", sep = "")
                         temp = temp.next
+                print('None')
 
-        # Add note to end of the list
+        # Add node to end of the list
         def addNode(self, node):
                 if not self.head:
                         self.head = node
@@ -28,8 +29,7 @@ class LinkedList:
                 temp.next = node
                 node.next = None
 
-        # Add nodes in ascending order
-        # Assume that list is already in order
+        # Sort the elements in the linked list
         def addSortedNode(self, node):
                 if not self.head:
                         self.head = node
@@ -46,10 +46,14 @@ class LinkedList:
 
 List = LinkedList()
 
-List.addSortedNode(Node(17))
-List.addSortedNode(Node(42))
-List.addSortedNode(Node(50))
-List.addSortedNode(Node(33))
-List.addSortedNode(Node(24))
+#List.addSortedNode(Node(17))
+#List.addSortedNode(Node(42))
+#List.addSortedNode(Node(50))
+#List.addSortedNode(Node(33))
+#List.addSortedNode(Node(24))
+
+List.addNode(Node(34))
+List.addNode(Node(12))
+List.addNode(Node(20))
 
 List.printList()
