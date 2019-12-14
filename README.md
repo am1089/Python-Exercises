@@ -15,3 +15,4 @@ These are a set of python exercises
 - **QuickSort.py** is a code to organize a list with a quicksort function
 - **LinearSearch.py** is a way to search for a inputed number in a random list
 - **BinarySearch.py** is a way to search for a inputed number only in a sorted list
+- **LinkedLists.py** is a way to make linked lists which is a linear collection of data elements
