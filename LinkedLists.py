@@ -42,7 +42,33 @@ class LinkedList:
                         prev.next = node
                         node.next = temp
                 else:
-                        prev.next = node  
+                        prev.next = node
+
+        def deleteNode(self, num):
+                temp = self.head
+                
+                if temp is not None:
+                        # Check if head node is num
+                        if temp.data == num:
+                                self.head = temp.next
+                                temp = None
+                                return
+                        
+                        # Search for the node to be deleted
+                        while (temp is not None):
+                                if temp.data == num:
+                                        break
+                                prev = temp
+                                temp = temp.next
+                                
+                        # If num isn't present in linked list
+                        if temp == None:
+                                return
+                        
+                        # Unlink node from linked list
+                        prev.next = temp.next
+                        temp = None
+                                        
 
 List = LinkedList()
 
@@ -55,5 +81,13 @@ List = LinkedList()
 List.addNode(Node(34))
 List.addNode(Node(12))
 List.addNode(Node(20))
+
+List.printList()
+
+List.deleteNode(20)
+
+List.printList()
+
+List.deleteNode(2)
 
 List.printList()
